@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Dashboard</h1>
+        </header>
+        
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3>Total Users</h3>
+                <p class="number" id="totalUsers">1,235</p>
+            </div>
+            <div class="card">
+                <h3>Active Users</h3>
+                <p class="number" id="activeUsers">892</p>
+            </div>
+            <div class="card">
+                <h3>Revenue</h3>
+                <p class="number" id="revenue">Rs45,678</p>
+            </div>
+
+            <!--Charts-->
+            <div class="card chart-card">
+                <h3>Monthly Users</h3>
+                <canvas id="usersChart" width="600" height="300"></canvas>
+            </div>
+            <div class="card chart-card">
+                <h3>Revenue Growth</h3>
+                <canvas id="revenueChart" width="600" height="300"></canvas>
+            </div>
+
+            <!--Links Section-->
+            <div class="card links-card">
+                <h3>Quick Links</h3>
+                <ul id="quickLinks">
+                    <li><a href="#" class="dashboard-link">Reports</a></li>
+                    <li><a href="#" class="dashboard-link">Analytics</a></li>
+                    <li><a href="#" class="dashboard-link">Settings</a></li>
+                    <li><a href="#" class="dashboard-link">Help Center</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
